@@ -1179,3 +1179,98 @@ font-size: 14px;
   height: 1px;
   background: var(--hr_line_card)
 }
+
+
+
+/* .search-bar{
+  z-index: 3;
+  top: 50px;
+  border: 2px solid black;
+ position: relative;;
+  height: 100px;
+  width: 900px;
+}
+.navbar{
+
+  border: 2px solid black;
+} */
+
+
+.login-container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  border: 2px solid black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login-container form{
+  display: flex;
+  border: 2px solid black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 7px;;
+}
+.login-container form input{
+  margin: 15px;
+  height: 40px;
+  border-radius: 7px;
+  padding: 3px;
+  padding-left: 7px;
+
+  width: 300px;
+}
+.login-container form button{
+  width: 100px;
+  outline: none;
+  background-color: #04befe;
+  border: none;
+  height: auto;
+  font-size: 20px;
+border-radius: 7px;
+}
+
+
+.signup-container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  border: 2px solid black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.signup-container form{
+  display: flex;
+  border: 2px solid black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 7px;;
+}
+.signup-container form input{
+  margin: 15px;
+  height: 40px;
+  border-radius: 7px;
+  padding: 3px;
+  padding-left: 7px;
+
+  width: 300px;
+}
+.signup-container form button{
+  width: 100px;
+  outline: none;
+  background-color: #04befe;
+  border: none;
+  height: auto;
+  font-size: 20px;
+border-radius: 7px;
+}

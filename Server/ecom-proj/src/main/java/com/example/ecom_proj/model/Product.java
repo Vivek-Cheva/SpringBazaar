@@ -16,9 +16,11 @@ import java.util.List;
 @NoArgsConstructor
 public class Product {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    private String owner;
     private String name;
     private String description;
     private String brand;
@@ -31,10 +33,7 @@ public class Product {
     private int stockQuantity;
 
     private String imageName;
-    private String imageType;
 
-    @Lob
-    private byte[] imageData;
 
 
 

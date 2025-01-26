@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const AddProduct = () => {
+const AddProduct = ({email}) => {
+  if(localStorage.getItem("email")==null) window.location.assign('/login');
   const [product, setProduct] = useState({
+    owner: localStorage.getItem('email'),
     name: "",
     brand: "",
     description: "",
@@ -42,6 +44,7 @@ const AddProduct = () => {
       .then((response) => {
         console.log("Product added successfully:", response.data);
         alert("Product added successfully");
+        window.location.assign('/');
       })
       .catch((error) => {
         console.error("Error adding product:", error);

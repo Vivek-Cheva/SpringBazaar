@@ -27,6 +27,7 @@ const Home = ({ selectedCategory }) => {
                 { responseType: "blob" }
               );
               const imageUrl = URL.createObjectURL(response.data);
+             
               return { ...product, imageUrl };
             } catch (error) {
               console.error(

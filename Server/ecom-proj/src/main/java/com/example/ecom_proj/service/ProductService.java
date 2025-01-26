@@ -18,25 +18,23 @@ private ProductRepo repo;
         return repo.findAll();
 
     }
-    public Product addProduct(Product product, MultipartFile imageFile) throws IOException {
-        product.setImageName(imageFile.getOriginalFilename());
-        product.setImageType(imageFile.getContentType());
-        product.setImageData(imageFile.getBytes());
+    public Product addProduct(Product product) throws IOException {
+
+
         return repo.save(product);
 
 
     }
 
     public Product getproduct(int prdid) {
+
         return repo.findById(prdid).orElse(null) ;
     }
 
-    public Product updateProduct(int id, Product product, MultipartFile imageFile) throws IOException {
+    public Product updateProduct(int id, Product product) throws IOException {
 
 
-        product.setImageName(imageFile.getOriginalFilename());
-        product.setImageType(imageFile.getContentType());
-        product.setImageData(imageFile.getBytes());
+
         return repo.save(product);
     }
 
